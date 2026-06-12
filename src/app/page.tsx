@@ -1,103 +1,103 @@
-import Image from "next/image";
-
 export default function Home() {
   return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+    <main className="min-h-dvh overflow-hidden bg-[#182636] text-[#F4F0E7]">
+      <section className="relative isolate flex min-h-dvh items-center px-6 py-8 sm:px-10 lg:px-16">
+        <div className="absolute inset-0 -z-20 bg-[linear-gradient(145deg,#182636_0%,#243447_48%,#111A25_100%)]" />
+        <div className="night-grain absolute inset-0 -z-10" />
+        <div className="radio-lines absolute inset-x-0 bottom-0 -z-10 h-56 opacity-70" />
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+        <div className="mx-auto grid w-full max-w-6xl items-center gap-12 lg:grid-cols-[1.02fr_0.98fr]">
+          <div className="max-w-2xl pt-2">
+            <p className="mb-10 flex items-baseline gap-3 text-sm tracking-[0.22em] text-[#A9B4C4]">
+              <span className="text-base font-semibold tracking-[0.18em] text-[#F4F0E7]">
+                知你
+              </span>
+              <span className="h-px w-8 bg-[#D9B76A]/70" />
+              <span>Zhini</span>
+            </p>
+
+            <h1 className="max-w-[12ch] text-5xl font-semibold leading-[1.08] tracking-normal text-[#F8F3E8] sm:text-6xl lg:text-7xl">
+              今天是不是又撑了很久？
+            </h1>
+
+            <p className="mt-7 max-w-xl text-lg leading-8 text-[#A9B4C4] sm:text-xl sm:leading-9">
+              当现实中的人习惯给你建议和道理时，这里有人愿意先理解你的感受。
+            </p>
+
+            <div className="mt-10 flex flex-col gap-3 sm:flex-row sm:items-center">
+              <a
+                className="inline-flex h-12 items-center justify-center rounded-full bg-[#D9B76A] px-7 text-base font-semibold text-[#172230] shadow-[0_16px_40px_rgba(217,183,106,0.18)] transition hover:bg-[#E3C77E] focus:outline-none focus:ring-2 focus:ring-[#D9B76A] focus:ring-offset-2 focus:ring-offset-[#182636]"
+                href="#start"
+              >
+                开始陪伴
+              </a>
+              <a
+                className="inline-flex h-12 items-center justify-center rounded-full border border-[#A9B4C4]/30 px-7 text-base font-semibold text-[#F4F0E7] transition hover:border-[#D9B76A]/70 hover:text-[#D9B76A] focus:outline-none focus:ring-2 focus:ring-[#A9B4C4] focus:ring-offset-2 focus:ring-offset-[#182636]"
+                href="#companions"
+              >
+                认识他们
+              </a>
+            </div>
+          </div>
+
+          <div className="relative min-h-[280px] sm:min-h-[360px] lg:min-h-[520px]">
+            <div className="radio-panel absolute inset-x-0 top-4 mx-auto w-full max-w-[460px] rounded-[28px] border border-[#A9B4C4]/18 bg-[#243447]/54 p-6 shadow-[0_32px_90px_rgba(0,0,0,0.34)] backdrop-blur-md sm:p-8 lg:top-8">
+              <div className="mb-8 flex items-center justify-between">
+                <span className="text-xs tracking-[0.28em] text-[#A9B4C4]">
+                  LATE NIGHT
+                </span>
+                <span className="h-2 w-2 rounded-full bg-[#D9B76A] shadow-[0_0_24px_rgba(217,183,106,0.8)]" />
+              </div>
+
+              <div className="frequency-window rounded-[18px] border border-[#D9B76A]/24 bg-[#131E2B]/72 px-5 py-7">
+                <div className="mb-5 flex items-end justify-between text-[#A9B4C4]">
+                  <span className="text-sm">FM</span>
+                  <span className="font-mono text-3xl text-[#D9B76A]">
+                    23.47
+                  </span>
+                </div>
+                <div className="flex h-24 items-end gap-2">
+                  {[
+                    "30%",
+                    "52%",
+                    "40%",
+                    "78%",
+                    "55%",
+                    "88%",
+                    "46%",
+                    "64%",
+                    "36%",
+                    "72%",
+                    "48%",
+                    "58%",
+                  ].map((height, index) => (
+                    <span
+                      className="w-full rounded-t-full bg-[#A9B4C4]/55"
+                      key={`${height}-${index}`}
+                      style={{ height }}
+                    />
+                  ))}
+                </div>
+              </div>
+
+              <div className="mt-8 grid grid-cols-[1fr_auto] items-end gap-6">
+                <div>
+                  <div className="mb-3 h-px bg-[#A9B4C4]/18" />
+                  <div className="flex justify-between text-[10px] tracking-[0.18em] text-[#A9B4C4]/72">
+                    <span>20</span>
+                    <span>40</span>
+                    <span>60</span>
+                    <span>80</span>
+                  </div>
+                </div>
+                <div className="grid h-20 w-20 place-items-center rounded-full border border-[#D9B76A]/32 bg-[#172230] shadow-inner shadow-black/40">
+                  <div className="h-3 w-10 rounded-full bg-[#D9B76A]" />
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+      </section>
+    </main>
   );
 }
