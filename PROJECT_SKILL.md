@@ -25,6 +25,12 @@ This is a Next.js 15 project using the App Router, TypeScript, Tailwind CSS, ESL
 - Prefer TypeScript for all application code.
 - Use Tailwind CSS utilities for styling unless a local pattern suggests otherwise.
 - Do not add business features unless explicitly requested.
+- For tasks involving UI, pages, layout, visual polish, responsive adaptation, Landing Page, registration page, login page, character selection page, chat page, or membership page, you must:
+  1. Read `PROJECT_CONTEXT.md` first.
+  2. Apply the principles from the `frontend-design` skill when making design decisions.
+  3. Perform a visual self-check after implementation.
+  4. Use Chrome DevTools to inspect both desktop and mobile rendering.
+  5. Then run `pnpm.cmd lint` and `pnpm.cmd build`.
 
 # Zhini Product Rules
 
