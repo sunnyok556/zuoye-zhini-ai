@@ -27,10 +27,61 @@ This is a Next.js 15 project using the App Router, TypeScript, Tailwind CSS, ESL
 - Do not add business features unless explicitly requested.
 - For tasks involving UI, pages, layout, visual polish, responsive adaptation, Landing Page, registration page, login page, character selection page, chat page, or membership page, you must:
   1. Read `PROJECT_CONTEXT.md` first.
-  2. Apply the principles from the `frontend-design` skill when making design decisions.
-  3. Perform a visual self-check after implementation.
-  4. Use Chrome DevTools to inspect both desktop and mobile rendering.
-  5. Then run `pnpm.cmd lint` and `pnpm.cmd build`.
+  2. Read and apply both the `frontend-design` and `design-taste-frontend` skills.
+  3. Audit the existing pages and visual language before proposing or implementing a design.
+  4. Prefer a targeted evolution of the current design over an unnecessary redesign.
+  5. Perform a visual self-check after implementation.
+  6. Use Chrome DevTools to inspect both desktop and mobile rendering.
+  7. Then run `pnpm.cmd lint` and `pnpm.cmd build`.
+
+## Mandatory Design Rules
+
+These rules apply to all Landing Pages, brand pages, registration and login
+pages, character pages, chat pages, and membership pages.
+
+### Required Skills
+
+Always use both skills together:
+
+- `frontend-design`: layout, typography, spacing, responsive behavior, and
+  component design.
+- `design-taste-frontend` (Taste): brand character, emotional expression,
+  refinement, and visual consistency.
+
+Neither skill is optional for the page types listed above.
+
+### Design Direction
+
+Every design must feel:
+
+- Late-night
+- Quiet
+- Private
+- Restrained
+- Gentle
+- Safe
+
+Avoid designs that feel like:
+
+- A SaaS tool
+- A generic AI tool
+- An otome game
+- A counseling institution
+- A high-saturation marketing page
+
+### Existing Design First
+
+Before starting any new page design:
+
+1. Inspect the existing pages, shared components, typography, colors, spacing,
+   imagery, motion, and responsive behavior.
+2. State the current design language and use it as the starting point.
+3. Preserve the overall visual language and product identity wherever possible.
+4. Do not overturn the existing design merely to make a page look more
+   fashionable or visually impressive.
+5. Change established patterns only when the request requires it or the current
+   implementation creates a clear usability, accessibility, or consistency
+   problem.
 
 # Zhini Product Rules
 
