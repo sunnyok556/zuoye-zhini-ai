@@ -128,6 +128,7 @@ export default function Home() {
                 <span className="bedside-table" />
                 <span className="medicine-box" />
                 <span className="water-glass" />
+                <span className="parent-table-lamp" />
               </div>
               <p>
                 <span>父母身体不舒服，</span>
@@ -140,7 +141,7 @@ export default function Home() {
                 <span className="laptop-screen" />
                 <span className="laptop-base" />
                 <span className="work-files" />
-                <span className="work-note" />
+                <span className="work-files-secondary" />
               </div>
               <p>
                 <span>客户临时变卦，</span>
