@@ -65,6 +65,21 @@ html {
     linear-gradient(180deg, #182636 0%, #19293a 42%, #131f2c 100%);
 }
 
+.responsibility-section {
+  min-height: 100vh;
+  min-height: 100dvh;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  scroll-margin-top: 0;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+}
+
+.responsibility-section > div:last-child {
+  min-height: calc(100dvh - 4rem);
+  justify-content: center;
+}
+
 .responsibility-haze {
   width: 34rem;
   height: 24rem;
@@ -96,7 +111,7 @@ html {
 
 .responsibility-title-turn {
   margin-top: 0.65rem;
-  color: #fffaf0;
+  color: #fffefb;
   font-size: 1.08em;
   font-weight: 700;
   line-height: 1.12;
@@ -110,7 +125,7 @@ html {
   display: flex;
   align-items: center;
   padding: 1rem 0.75rem;
-  background: linear-gradient(115deg, rgba(255, 255, 255, 0.016), transparent 58%);
+  background: linear-gradient(115deg, rgba(255, 255, 255, 0.018), transparent 58%);
 }
 
 .responsibility-scene p {
@@ -159,11 +174,11 @@ html {
   right: 0.6rem;
   bottom: 0.5rem;
   left: 0.6rem;
-  background: repeating-linear-gradient(
-    90deg,
-    rgba(193, 202, 214, 0.36) 0 1px,
-    transparent 1px 0.94rem
-  );
+  background:
+    linear-gradient(rgba(193, 202, 214, 0.36), rgba(193, 202, 214, 0.36)) 0 0 / 1px 100% no-repeat,
+    linear-gradient(rgba(193, 202, 214, 0.36), rgba(193, 202, 214, 0.36)) 33.333% 0 / 1px 100% no-repeat,
+    linear-gradient(rgba(193, 202, 214, 0.36), rgba(193, 202, 214, 0.36)) 66.666% 0 / 1px 100% no-repeat,
+    linear-gradient(rgba(193, 202, 214, 0.36), rgba(193, 202, 214, 0.36)) 100% 0 / 1px 100% no-repeat;
 }
 
 .crib-frame::after {
@@ -521,7 +536,150 @@ html {
 .close-ending-lead { color: #eef0ed; }
 .close-ending-focus { color: #d3b46f; }
 
+@media (max-width: 639px) {
+  .responsibility-section {
+    padding-top: 1.5rem;
+    padding-bottom: 1.25rem;
+  }
+
+  .responsibility-section > div:last-child {
+    min-height: calc(100dvh - 2.75rem);
+  }
+
+  .responsibility-scenes {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 3.125rem 0.85rem;
+    margin-top: 2rem;
+  }
+
+  .responsibility-scene {
+    min-height: 168px;
+    align-items: flex-start;
+    padding: 0.9rem 0.7rem;
+  }
+
+  .responsibility-scene:nth-child(even) {
+    background: linear-gradient(245deg, rgba(255, 255, 255, 0.018), transparent 58%);
+  }
+
+  .responsibility-scene p {
+    max-width: 100%;
+    font-size: 0.78rem;
+    line-height: 1.65;
+  }
+
+  .responsibility-scene .scene-trace {
+    top: 3.7rem;
+  }
+
+  .scene-child .crib-frame {
+    right: 0.45rem;
+    bottom: 0.55rem;
+  }
+
+  .scene-child .bedside-lamp {
+    top: 1.2rem;
+    right: 0.75rem;
+  }
+
+  .scene-parents .bedside-table {
+    right: 0.35rem;
+    bottom: 0.55rem;
+  }
+
+  .scene-parents .parent-table-lamp {
+    right: 6.15rem;
+    bottom: 1.25rem;
+  }
+
+  .scene-parents .water-glass {
+    right: 4.15rem;
+    bottom: 1.27rem;
+  }
+
+  .scene-parents .medicine-box {
+    right: 0.95rem;
+    bottom: 1.32rem;
+  }
+
+  .scene-work .laptop-screen {
+    right: 0.45rem;
+    bottom: 1rem;
+  }
+
+  .scene-work .laptop-base {
+    right: 0.1rem;
+    bottom: 0.7rem;
+  }
+
+  .scene-work .work-files {
+    right: 4.85rem;
+    bottom: 0.68rem;
+  }
+
+  .scene-work .work-files-secondary {
+    right: 7.25rem;
+    bottom: 0.62rem;
+  }
+
+  .scene-home .dining-lamp {
+    top: 0.8rem;
+    right: 1.75rem;
+  }
+
+  .scene-home .home-laptop {
+    right: 0.45rem;
+    bottom: 0.65rem;
+  }
+
+  .scene-home .home-notebook {
+    right: 3.95rem;
+    bottom: 0.52rem;
+  }
+
+  .scene-home .baby-bottle {
+    right: 7.85rem;
+    bottom: 0.55rem;
+  }
+
+  .responsibility-close {
+    margin-top: 4.75rem;
+    transform: translateY(-2rem);
+  }
+
+  .close-context,
+  .close-question {
+    font-size: 0.82rem;
+    line-height: 1.45;
+  }
+
+  .close-strength {
+    margin-top: 0.2rem;
+    font-size: 1.48rem;
+    line-height: 1.22;
+  }
+
+  .close-question {
+    margin-top: 1.55rem;
+  }
+
+  .close-ending {
+    margin-top: 0.25rem;
+    font-size: 1.82rem;
+    line-height: 1.22;
+  }
+}
+
 @media (min-width: 640px) {
+  .responsibility-section {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+
+  .responsibility-section > div:last-child {
+    min-height: calc(100dvh - 8rem);
+  }
+
   .responsibility-scenes { gap: 1rem 1.5rem; margin-top: 3.35rem; }
   .responsibility-scene { min-height: 145px; padding: 1.4rem 1.75rem; }
   .responsibility-scene p { font-size: 1.08rem; }
@@ -529,19 +687,25 @@ html {
 }
 
 @media (min-width: 1024px) {
+  .responsibility-section {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .responsibility-section > div:last-child {
+    min-height: calc(100dvh - 4rem);
+  }
+
   .responsibility-scenes {
-    gap: 1rem 4rem;
-    margin-top: 3.75rem;
+    max-width: 66rem;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.375rem 3.5rem;
+    margin-top: 2.5rem;
   }
 
   .responsibility-scene {
-    min-height: 158px;
+    min-height: 170px;
     padding: 1.6rem 2.5rem;
-  }
-
-  .responsibility-scene:nth-child(2),
-  .responsibility-scene:nth-child(4) {
-    transform: translateY(0.8rem);
   }
 
   .responsibility-scene p {
@@ -549,7 +713,21 @@ html {
     line-height: 1.85;
   }
 
-  .responsibility-close { margin-top: 3.7rem; }
+  .scene-child .crib-frame { right: 1rem; }
+  .scene-child .bedside-lamp { right: 1.25rem; }
+  .scene-parents .bedside-table { right: 0.8rem; }
+  .scene-parents .parent-table-lamp { right: 6.6rem; }
+  .scene-parents .water-glass { right: 4.6rem; }
+  .scene-parents .medicine-box { right: 1.4rem; }
+  .scene-work .laptop-screen { right: 1rem; }
+  .scene-work .laptop-base { right: 0.65rem; }
+  .scene-work .work-files { right: 5.6rem; }
+  .scene-work .work-files-secondary { right: 8rem; }
+  .scene-home .home-laptop { right: 0.95rem; }
+  .scene-home .home-notebook { right: 4.65rem; }
+  .scene-home .baby-bottle { right: 8.55rem; }
+
+  .responsibility-close { margin-top: 3rem; }
   .close-context, .close-question { font-size: 1.05rem; }
   .close-strength { font-size: 2rem; }
   .close-question { margin-top: 2.75rem; }

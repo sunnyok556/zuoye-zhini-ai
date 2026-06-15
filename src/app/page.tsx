@@ -99,7 +99,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="responsibility-section relative isolate flex min-h-[780px] items-center overflow-hidden px-5 py-12 sm:px-10 lg:min-h-[840px] lg:px-16 lg:py-16">
+      <section className="responsibility-section relative isolate flex min-h-dvh items-center overflow-hidden px-5 sm:px-10 lg:px-16">
         <div className="responsibility-background absolute inset-0 -z-30" />
         <div className="responsibility-haze responsibility-haze-warm absolute -z-20" />
         <div className="responsibility-haze responsibility-haze-cool absolute -z-20" />
