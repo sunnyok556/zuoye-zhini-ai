@@ -1,10 +1,3 @@
-const tiredWords = [
-  "别人都能坚持，怎么就你不行？",
-  "别想那么多，睡一觉就好了。",
-  "你就是压力太大了，爱胡思乱想。",
-  "当妈的，哪有不辛苦的。",
-];
-
 export default function Home() {
   return (
     <main className="min-h-dvh overflow-hidden bg-[#182636] text-[#F4F0E7]">
@@ -106,42 +99,77 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="relative isolate flex min-h-dvh items-center px-6 py-16 sm:px-10 sm:py-20 lg:px-16">
-        <div className="absolute inset-0 -z-20 bg-[linear-gradient(180deg,#182636_0%,#1D2C3D_52%,#14202D_100%)]" />
-        <div className="night-grain absolute inset-0 -z-10 opacity-60" />
+      <section className="responsibility-section relative isolate flex min-h-[780px] items-center overflow-hidden px-5 py-12 sm:px-10 lg:min-h-[840px] lg:px-16 lg:py-16">
+        <div className="responsibility-background absolute inset-0 -z-30" />
+        <div className="responsibility-haze responsibility-haze-warm absolute -z-20" />
+        <div className="responsibility-haze responsibility-haze-cool absolute -z-20" />
+        <div className="night-grain absolute inset-0 -z-10 opacity-35" />
 
-        <div className="mx-auto grid w-full max-w-6xl gap-14 lg:grid-cols-[0.92fr_1.08fr] lg:items-start">
-          <div className="max-w-xl">
-            <p className="mb-5 text-xs tracking-[0.28em] text-[#D9B76A]/80">
-              MIDNIGHT ECHO
-            </p>
-            <h2 className="text-3xl font-semibold leading-tight tracking-normal text-[#F8F3E8] sm:text-5xl">
-              这些话，你是不是也听累了？
-            </h2>
+        <div className="mx-auto flex w-full max-w-6xl flex-col items-center">
+          <h2 className="responsibility-title text-center text-[2.05rem] font-semibold leading-[1.22] text-[#F7F3EA] sm:text-5xl lg:text-[3.25rem] lg:leading-[1.16]">
+            <span className="block whitespace-nowrap">你照顾了很多人。</span>
+            <span className="responsibility-title-turn block">那你呢？</span>
+          </h2>
+
+          <div className="responsibility-scenes" aria-label="深夜里的责任场景">
+            <article className="responsibility-scene scene-child">
+              <div className="scene-trace scene-trace-child" aria-hidden="true">
+                <span className="crib-frame" />
+                <span className="bedside-lamp" />
+              </div>
+              <p>
+                <span>孩子半夜哭醒，</span>
+                <span>第一声喊的是妈妈。</span>
+              </p>
+            </article>
+
+            <article className="responsibility-scene scene-parents">
+              <div className="scene-trace scene-trace-parents" aria-hidden="true">
+                <span className="bedside-table" />
+                <span className="medicine-box" />
+                <span className="water-glass" />
+              </div>
+              <p>
+                <span>父母身体不舒服，</span>
+                <span>第一个想到的是你。</span>
+              </p>
+            </article>
+
+            <article className="responsibility-scene scene-work">
+              <div className="scene-trace scene-trace-work" aria-hidden="true">
+                <span className="laptop-screen" />
+                <span className="laptop-base" />
+                <span className="work-files" />
+                <span className="work-note" />
+              </div>
+              <p>
+                <span>客户临时变卦，</span>
+                <span>团队等着你拿主意。</span>
+              </p>
+            </article>
+
+            <article className="responsibility-scene scene-home">
+              <div className="scene-trace scene-trace-home" aria-hidden="true">
+                <span className="dining-lamp" />
+                <span className="home-laptop" />
+                <span className="home-notebook" />
+                <span className="baby-bottle" />
+              </div>
+              <p>
+                <span>家里一地鸡毛，</span>
+                <span>工作还要继续往前推。</span>
+              </p>
+            </article>
           </div>
 
-          <div className="relative">
-            <div className="absolute left-3 top-0 h-full w-px bg-gradient-to-b from-[#D9B76A]/60 via-[#A9B4C4]/18 to-transparent sm:left-5" />
-            <div className="space-y-5 pl-9 sm:space-y-6 sm:pl-14">
-              {tiredWords.map((word) => (
-                <p
-                  className="relative rounded-[2px] border-l border-[#A9B4C4]/18 bg-[#243447]/28 px-5 py-4 text-lg leading-8 text-[#A9B4C4] shadow-[0_18px_50px_rgba(0,0,0,0.12)] sm:text-xl sm:leading-9"
-                  key={word}
-                >
-                  <span className="absolute -left-[34px] top-6 h-2.5 w-2.5 rounded-full bg-[#D9B76A] shadow-[0_0_22px_rgba(217,183,106,0.65)] sm:-left-[50px]" />
-                  {word}
-                </p>
-              ))}
-            </div>
-
-            <div className="mt-14 max-w-2xl border-t border-[#A9B4C4]/16 pt-8">
-              <p className="text-2xl font-semibold leading-relaxed text-[#F4F0E7] sm:text-3xl">
-                也许不是你太敏感。
-              </p>
-              <p className="mt-3 text-xl leading-relaxed text-[#A9B4C4] sm:text-2xl">
-                只是很久没有人认真听你说话了。
-              </p>
-            </div>
+          <div className="responsibility-close text-center">
+            <p className="close-context">好像所有人都习惯了：</p>
+            <p className="close-strength">你会撑住。</p>
+            <p className="close-question">却很少有人问：</p>
+            <p className="close-ending">
+              <span className="close-ending-lead">今天的你，</span>
+              <span className="close-ending-focus">累不累。</span>
+            </p>
           </div>
         </div>
       </section>
